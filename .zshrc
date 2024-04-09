@@ -70,7 +70,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose aliases dotenv sudo kubectl)
+plugins=(git docker docker-compose aliases sudo kubectl command-not-found terraform)
 
 source $ZSH/oh-my-zsh.sh
 
