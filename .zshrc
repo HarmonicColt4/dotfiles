@@ -70,7 +70,9 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose aliases sudo kubectl command-not-found terraform minikube helm)
+plugins=(git docker docker-compose aliases sudo kubectl command-not-found terraform minikube helm fluxcd brew)
+
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,3 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias sudo="sudo "
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
