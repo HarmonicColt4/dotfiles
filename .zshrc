@@ -72,7 +72,7 @@ ZSH_THEME="af-magic"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git docker docker-compose aliases sudo kubectl command-not-found terraform minikube helm fluxcd brew)
 
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,4 +106,4 @@ alias sudo="sudo "
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
