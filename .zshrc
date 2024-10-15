@@ -13,3 +13,8 @@ source $ZSH/oh-my-zsh.sh
 alias sudo="sudo "
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+autoload -Uz compinit
+compinit
