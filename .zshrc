@@ -6,15 +6,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="af-magic"
 
-plugins=(git docker docker-compose aliases sudo kubectl command-not-found terraform minikube helm fluxcd brew)
+plugins=(git aliases sudo kubectl command-not-found terraform helm fluxcd)
 
 source $ZSH/oh-my-zsh.sh
 
 alias sudo="sudo "
-
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-autoload -Uz compinit
-compinit
