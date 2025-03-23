@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="af-magic"
 
-plugins=(git aliases sudo kubectl command-not-found terraform helm fluxcd brew zsh-navigation-tools)
+plugins=(git aliases sudo kubectl command-not-found terraform helm fluxcd brew zsh-navigation-tools kind)
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -69,4 +69,4 @@ alias tgaa="terragrunt run-all apply -auto-approve --terragrunt-non-interactive"
 alias tgd="terragrunt run-all destroy"
 alias tgd!="terragrunt run-all destroy -auto-approve --terragrunt-non-interactive"
 
-complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terragrunt/0.72.2/bin/terragrunt terragrunt
+complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terragrunt/0.76.1/bin/terragrunt terragrunt
