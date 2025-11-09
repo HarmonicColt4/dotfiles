@@ -1,0 +1,17 @@
+---
+extends: default
+
+rules:
+  document-start:
+    present: true
+    level: error
+  indentation:
+    spaces: consistent
+    indent-sequences: consistent
+    check-multi-line-strings: false
+  line-length: disable
+  brackets:
+    forbid: true
+    max-spaces-inside: 1
+ignore:
+- "*.enc.yml"

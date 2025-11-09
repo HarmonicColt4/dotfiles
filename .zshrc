@@ -48,10 +48,11 @@ alias fresk="flux resume kustomization"
 alias fresh="flux resume helmrelease"
 alias fsk="flux suspend kustomization"
 alias fsh="flux suspend helmrelease"
-alias fdk="flux delete kustomization"
-alias fdh="flux delete helmrelease"
+alias fdelk="flux delete kustomization"
+alias fdelh="flux delete helmrelease"
 
 # talosctl aliases
+alias t="talosctl"
 alias tc="talosctl config"
 alias tci="talosctl config info"
 alias tcc="talosctl config context"
@@ -70,3 +71,9 @@ alias tgd="terragrunt run-all destroy"
 alias tgd!="terragrunt run-all destroy -auto-approve --terragrunt-non-interactive"
 
 complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terragrunt/0.76.1/bin/terragrunt terragrunt
+autoload -Uz compinit
+compinit -u
+
+setopt HIST_IGNORE_SPACE
+
+export HISTORY_IGNORE="export *"
