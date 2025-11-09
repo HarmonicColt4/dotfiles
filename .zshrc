@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="af-magic"
 
-plugins=(git aliases sudo kubectl command-not-found terraform helm fluxcd brew zsh-navigation-tools kind docker docker-compose k9s)
+plugins=(git aliases sudo kubectl command-not-found terraform helm fluxcd brew zsh-navigation-tools kind docker docker-compose k9s gh)
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
